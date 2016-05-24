@@ -4,7 +4,6 @@
 
 <script type="text/javascript">
 
-//Next part is technically optional. It submits the form if you click on one of the dropdown items.
 
 $(function() {
     $(".searchField").autocomplete({
