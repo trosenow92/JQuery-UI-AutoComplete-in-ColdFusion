@@ -3,13 +3,8 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
 
 <script type="text/javascript">
-$(function() {
-             
-            $(".searchField").autocomplete({
-                source: "autocomplete.cfm",
-                minLength: 3
-            });
-        });
+
+//Next part is technically optional. It submits the form if you click on one of the dropdown items.
 
 $(function() {
     $(".searchField").autocomplete({
@@ -25,5 +20,5 @@ $(function() {
 
 
 <form action="/search-result" method="post" id="searchForm">
-<input type="text" name="searchField" id="iconified" class="searchField form-control empty"/>
+<input type="text" name="query" id="iconified" class="searchField form-control empty"/>
 </form>
